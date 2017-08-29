@@ -1,0 +1,14 @@
+extends index.pug
+
+block navigator
+  div(class="blog-masthead")
+    div(class="container")
+      nav(id="nav" class="blog-nav")
+        a(class="blog-nav-item" href="/") Home
+        a(class="blog-nav-item" href="#") New features
+        a(class="blog-nav-item" href="#") Press
+        a(class="blog-nav-item" href="#") New hires
+        a(class="blog-nav-item active" href="/about") About
+
+block content
+  h1() about me
