@@ -13,7 +13,7 @@ block navigator
 block content
   div(class="container")
     div(class="blog-header")
-      f1(class="blog-title") The Blog 琦
+      h1(class="blog-title") The Blog 琦
       p(class="lead blog-description") The official example template of creating a blog with Bootstrap.
 
     div(class="row")
@@ -23,4 +23,11 @@ block content
           p(class="blog-post-meta") January 1, 2014 by #[a(href="#") Mark]
           hr()
           p() Cum sociis yyyyyyyyyyyyy.
-          blockquote() #[p Curabitur blandit #[strong Nullam quis]Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit ]
+          blockquote() #[p 找到多余的"&lt;body&gt;"标记 #[strong Nullam quis]Curabitur. <strong>Nullam</strong> leo. id elit ]
+
+      div(class="col-sm-3 col-sm-offset-1 blog-sidebar")
+        div(class="sidebar-module")
+          h4 Archives
+          ol(class="list-unstyled")
+            li() #[a(href="#") March 2014]
+            li() #[a(href="#") February 2014]
