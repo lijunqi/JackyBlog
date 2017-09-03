@@ -1,17 +1,17 @@
 extends index.pug
 
 block navigator
-  div(class="blog-masthead")
+  nav(class="blog-nav blog-masthead navbar navbar-expand-lg navbar-static-top" role="navigation")
     div(class="container")
-      nav(id="nav" class="blog-nav")
+      div(class="navbar-header")
+        a(class="blog-nav-item navbar-brand" href="/") Jacky's Blog
+      div(id="navbar" class="collapse navbar-collapse")
         a(class="blog-nav-item active" href="/") Home
-        a(class="blog-nav-item" href="#") New features
-        a(class="blog-nav-item" href="#") Press
-        a(class="blog-nav-item" href="#") New hires
+        a(class="blog-nav-item" href="#") Page1
+        a(class="blog-nav-item" href="#") Page2
         a(class="blog-nav-item" href="/about") About
-        div(class="navbar-collapse collapse")
-          ul(class="nav navbar-nav ml-auto w-100 justify-content-end")
-            li(class="nav-item") #[a(href="/signin") Sign in]
+        ul(class="nav navbar-nav ml-auto w-100 justify-content-end")
+          li(class="nav-item") #[a(class="blog-nav-item" href="/signin") Sign in]
 
 block content
   div(class="container")
@@ -25,7 +25,7 @@ block content
           h2(class="blog-post-title") Sample blog post
           p(class="blog-post-meta") January 1, 2014 by #[a(href="#") Mark]
           hr()
-          p() article - hi jacky.
+          p() Cum sociis yyyyyyyyyyyyy.
           blockquote() #[p 找到多余的"&lt;body&gt;"标记 #[strong Nullam quis]Curabitur. <strong>Nullam</strong> leo. id elit ]
 
       div(class="col-sm-3 col-sm-offset-1 blog-sidebar")

@@ -162,3 +162,9 @@ h6, .h6 {
   margin-bottom: 0;
 }
 
+/*
+ * static navbar
+ * */
+.navbar-static-top {
+  margin-bottom: 19px;
+}
