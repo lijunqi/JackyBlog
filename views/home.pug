@@ -1,17 +1,18 @@
 extends index.pug
 
 block navigator
-  div(class="blog-masthead")
+  nav(class="new-masthead navbar navbar-static-top")
     div(class="container")
-      nav(id="nav" class="blog-nav")
-        a(class="blog-nav-item active" href="/") Home
-        a(class="blog-nav-item" href="#") New features
-        a(class="blog-nav-item" href="#") Press
-        a(class="blog-nav-item" href="#") New hires
-        a(class="blog-nav-item" href="/about") About
-        div(class="navbar-collapse collapse")
-          ul(class="nav navbar-nav ml-auto w-100 justify-content-end")
-            li(class="nav-item") #[a(href="/signin") Sign in]
+      div(class="navbar-header")
+        a(class="new-nav-item navbar-brand" href="/") Jacky's Blog
+      div(id="navbar" class="navbar-collapse collapse")
+        ul(class="nav navbar-nav")
+          li() #[a(class="new-nav-item active" href="/") Home]
+          li() #[a(class="new-nav-item" href="/") Page1]
+          li() #[a(class="new-nav-item" href="/") Page2]
+          li() #[a(class="new-nav-item" href="/about") About]
+        ul(class="nav navbar-nav navbar-right")
+          li() #[a(class="new-nav-item" href="/signin") Sign in]
 
 block content
   div(class="container")
@@ -23,14 +24,14 @@ block content
       div(class="col-sm-8 blog-main")
         div(class="blog-post")
           h2(class="blog-post-title") Sample blog post
-          p(class="blog-post-meta") January 1, 2014 by #[a(href="#") Mark]
+          p(class="blog-post-meta") January 1, 2017 by #[a(href="#") Jacky]
           hr()
-          p() article - hi jacky.
+          p() Cum sociis yyyyyyyyyyyyy.
           blockquote() #[p 找到多余的"&lt;body&gt;"标记 #[strong Nullam quis]Curabitur. <strong>Nullam</strong> leo. id elit ]
 
       div(class="col-sm-3 col-sm-offset-1 blog-sidebar")
         div(class="sidebar-module")
           h4 Archives
           ol(class="list-unstyled")
-            li() #[a(href="#") March 2014]
-            li() #[a(href="#") February 2014]
+            li() #[a(href="#") March 2017]
+            li() #[a(href="#") February 2017]
