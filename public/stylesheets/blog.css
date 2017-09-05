@@ -47,15 +47,19 @@ h6, .h6 {
 .new-nav-item {
   position: relative;
   font-weight: 500;
+  color: #cdddeb; /* font color #cdddeb;*/
+}
+.new-nav-item:focus {
   color: #fff;
+  text-decoration: none;
 }
 
 .blog-nav-item {
   position: relative;
   display: inline-block;
-  padding: 0px; /* 10px */
+  padding: 10px; /* 10px */
   font-weight: 500;
-  color: #cdddeb;
+  color: #cdddeb; /* font color #cdddeb;*/
 }
 .blog-nav-item:hover,
 .blog-nav-item:focus {

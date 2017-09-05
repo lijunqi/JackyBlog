@@ -3,6 +3,19 @@ extends index.pug
 block styles
   link(rel='stylesheet', href='/stylesheets/signin.css')
 
+block navigator
+  nav(class="new-masthead navbar navbar-static-top")
+    div(class="container")
+      div(class="navbar-header")
+        a(class="new-nav-item navbar-brand" href="/") Jacky's Blog
+      div(id="navbar" class="navbar-collapse collapse")
+        ul(class="nav navbar-nav")
+          li() #[a(class="new-nav-item" href="/") Home]
+          li() #[a(class="new-nav-item" href="/") Page1]
+          li() #[a(class="new-nav-item" href="/") Page2]
+          li() #[a(class="new-nav-item" href="/about") About]
+        ul(class="nav navbar-nav navbar-right")
+          li() #[a(class="new-nav-item active" href="/signin") Sign in]
 
 block content
   div(class="container")
