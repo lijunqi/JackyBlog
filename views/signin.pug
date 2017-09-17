@@ -18,15 +18,18 @@ block navigator
           li() #[a(class="new-nav-item active" href="/signin") Sign in]
 
 block content
-  div(class="container")
+  div(id="signin" class="container")
     form(class="form-signin")
       h2(class="form-signin-heading") Please sign in
       label(class="sr-only" for="inputEmail") Email address
-      input(type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus)
+      input(type="email" v-model="unameVal" id="inputEmail" class="form-control" placeholder="Email address" required autofocus)
       label(class="sr-only" for="inputPassword") Password
-      input(type="password" id="inputPassword" class="form-control" placeholder="Password")
+      input(type="password" v-model="passwordVal" id="inputPassword" class="form-control" placeholder="Password")
       div(class="checkbox")
         label()
           input(type="checkbox" value="remember-me")
           |  Remember me
-      button(class="btn btn-lg btn-primary btn-block" type="submit") Sign in
+      button(class="btn btn-lg btn-primary btn-block" v-on:click="test" type="submit") Sign in
+
+
+  script(type='text/javascript' src='./javascripts/signin.js')
