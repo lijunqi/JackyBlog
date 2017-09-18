@@ -1,9 +1,20 @@
 var express = require('express');
 var router = express.Router();
 
+//var navCtrl = require(__dirname + '/../public/javascripts/navCtrl.js');
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('home', { title: "Jacky's Blog" });
+  var account = req.query.userEmail;
+  console.log("account  = ", req.query.userEmail);
+  console.log("password = ", req.query.userPwd);
+//  console.log("navCtrl = ", navCtrl);
+  res.render('home',
+	{
+		title: "Jacky's Blog",
+		account: account
+	}
+  );
 });
 
 router.get('/about', function(req, res, next) {

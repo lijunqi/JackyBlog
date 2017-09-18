@@ -9,6 +9,15 @@ var signinComp = new Vue({
 		test: function (event) {
 			console.log(`uname: ${this.unameVal}, pwd: ${this.passwordVal}`);
 			console.log("Password: ", this.passwordVal);
+			return {a:123,b:'ddd'};
 		}
+	}
+});
+
+var navComp = new Vue({
+	el: '#navbar',
+	data: {
+		bSignIn: false,
+		uname: '',
 	}
 });
