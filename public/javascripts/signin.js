@@ -13,11 +13,3 @@ var signinComp = new Vue({
 		}
 	}
 });
-
-var navComp = new Vue({
-	el: '#navbar',
-	data: {
-		bSignIn: false,
-		uname: '',
-	}
-});

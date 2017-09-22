@@ -12,8 +12,11 @@ block navigator
           li() #[a(class="new-nav-item" href="/") Page2]
           li() #[a(class="new-nav-item" href="/about") About]
         ul(class="nav navbar-nav navbar-right")
-          li(v-if="bSignIn") #[a(class="new-nav-item" href="/signin") !{account}]
-          li(v-else) #[a(class="new-nav-item" href="/signin") Sign in]
+          case isSignIn
+            when true
+              li() #[a(class="new-nav-item" href="/signin") !{account}]
+            when false
+              li() #[a(class="new-nav-item" href="/signin") Sign in]
 
 block content
   div(class="container")
