@@ -23,6 +23,23 @@
   color: #fff;
   background-color: transparent;
 }
+
+/* Active state gets a caret at the bottom */
+.navbar-blue .navbar-nav li > .active:after {
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-left: -5px;
+  vertical-align: middle;
+  content: " ";
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid;
+  border-left: 5px solid transparent;
+}
+
 .navbar-blue .navbar-nav > .active > a,
 .navbar-blue .navbar-nav > .active > a:hover,
 .navbar-blue .navbar-nav > .active > a:focus {
