@@ -49,6 +49,7 @@ h6, .h6 {
   font-weight: 500;
   color: #cdddeb; /* font color #cdddeb;*/
 }
+.new-nav-item:hover,
 .new-nav-item:focus {
   color: #fff;
   text-decoration: none;

@@ -4,7 +4,7 @@ block styles
   link(rel='stylesheet', href='/stylesheets/signin.css')
 
 block navigator
-  nav(class="new-masthead navbar navbar-static-top")
+  nav(class="navbar navbar-blue navbar-static-top")
     div(class="container")
       div(class="navbar-header")
         a(class="new-nav-item navbar-brand" href="/") Jacky's Blog
@@ -19,7 +19,7 @@ block navigator
 
 block content
   div(class="container")
-    form(id="signin" class="form-signin" action="/")
+    form(id="signin" class="form-signin" action="/" v-on:submit="test")
       h2(class="form-signin-heading") Please sign in
       label(class="sr-only" for="inputEmail") Email address
       input(type="email" v-model="unameVal" id="inputEmail" name="userEmail" class="form-control" placeholder="Email address" required autofocus)
